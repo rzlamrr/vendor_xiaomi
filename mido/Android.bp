@@ -145,19 +145,6 @@ cc_prebuilt_library_shared {
 }
 
 android_app_import {
-<<<<<<< HEAD
-	name: "QtiTelephonyService",
-	owner: "xiaomi",
-	apk: "proprietary/app/QtiTelephonyService/QtiTelephonyService.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-}
-
-android_app_import {
-=======
->>>>>>> 3492073e1f61298ea7b63863709943b5712de38e
 	name: "WfdService",
 	owner: "xiaomi",
 	apk: "proprietary/priv-app/WfdService/WfdService.apk",
@@ -202,8 +189,6 @@ android_app_import {
 }
 
 android_app_import {
-<<<<<<< HEAD
-=======
 	name: "QtiTelephonyService",
 	owner: "xiaomi",
 	apk: "proprietary/product/app/QtiTelephonyService/QtiTelephonyService.apk",
@@ -215,7 +200,6 @@ android_app_import {
 }
 
 android_app_import {
->>>>>>> 3492073e1f61298ea7b63863709943b5712de38e
 	name: "PowerOffAlarm",
 	owner: "xiaomi",
 	apk: "proprietary/product/app/PowerOffAlarm/PowerOffAlarm.apk",
