@@ -1,10 +1,5 @@
 /**
-<<<<<<< HEAD
  * Copyright (C) 2019-2020 The LineageOS Project
- * Copyright (C) 2019-2020 The KomodoOS Project
-=======
- * Copyright (C) 2019-2020 The Komodo-OS-Rom Project
->>>>>>> ed77fcf05e1c54f2ca3310599de0189a1c2b4368
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -22,44 +17,6 @@
  */
 
 soong_namespace {
-}
-
-cc_prebuilt_library_shared {
-	name: "libgpustats",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libgpustats.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libgpustats.so"],
-		},
-	},
-	compile_multilib: "both",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libqmiservices",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libqmiservices.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libqmiservices.so"],
-		},
-	},
-	compile_multilib: "both",
-	prefer: true,
-	soc_specific: true,
 }
 
 cc_prebuilt_library_shared {
@@ -185,7 +142,7 @@ android_app_import {
 	name: "TimeService",
 	owner: "xiaomi",
 	apk: "proprietary/vendor/app/TimeService/TimeService.apk",
-	certificate: "platform",
+        certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
